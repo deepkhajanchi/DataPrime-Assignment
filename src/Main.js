@@ -14,17 +14,20 @@ import Referral from './Cards/Referral';
 class Main extends Component{
     render(){
         return(
+            <BrowserRouter>
             <div>
-                <Route path='/sidebar' component= {Sidebar}/>
-                <Route path='/profile' component= {Profile}/>
-                <Route path='/dashboard' component= {Dashboard}/>
-                <Route path='/resumebuilder' component= {ResumeBuilder}/>
-                <Route path='/community' component= {Community}/>
-                <Route path='/resources' component= {Resources}/>
-                <Route path='/faq' component= {FAQ}/>
-                <Route path='/contact' component= {Contact}/>
-                <Route path='/referral' component= {Referral}/>
+                <Route exact path='/'><Profile/></Route>
+                <Route path='/sidebar'><Sidebar/></Route>
+                <Route path='/profile'> <Profile/></Route>
+                <Route path='/dashboard'><Dashboard/></Route>
+                <Route path='/resumebuilder'><ResumeBuilder/></Route> 
+                <Route path='/community'><Community/></Route>
+                <Route path='/resources'><Resources/></Route>
+                <Route path='/faq'> <FAQ/></Route>
+                <Route path='/contact'> <Contact/></Route>
+                <Route path='/referral'><Referral/></Route>
             </div>
+            </BrowserRouter>
         )
     }
 }

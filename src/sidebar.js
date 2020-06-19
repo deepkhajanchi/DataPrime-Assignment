@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import {Link} from 'react-router-dom';
 import './stylesheet/sidebar.css';
+import styled from 'styled-components';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { makeStyles } from '@material-ui/core/styles';
@@ -17,23 +18,15 @@ import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
 import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
-import Divider from '@material-ui/core/Divider';
 import { Avatar } from '@material-ui/core';
 
-export default class Sidebar extends Component{  
-    constructor(props){
-        super(props);
-        this.state={
-            firstname:"",
-            lastname:"",
-        }
-    }
-       render(){
-          
-        return(
+    export default class Siderbar extends Component{
+        render(){
+            return(
             <div classname="sidebar">
+             
                 <Avatar/> {this.state.firstname} {this.state.lastname} 
-                <div className="subsidebar">
+                
                 <Link to='/profile'><PersonOutlineRoundedIcon />Profile</Link>
                 <Link to='/dashboard'><TiThLargeOutline />Dashboard</Link>
                 <Link to='/resumebuilder'><InsertDriveFileOutlinedIcon />ResumeBuilder</Link>
@@ -42,7 +35,7 @@ export default class Sidebar extends Component{
                 <Link to='/faq'><HelpOutlineOutlinedIcon />FAQ</Link>
                 <Link to='/contact'><ChatBubbleOutlineIcon />Contact</Link>
                 <Link to='/referral'><AccountBalanceWalletOutlinedIcon /> Referral programs</Link>
-                </div>
+                
             </div>
         )
     }

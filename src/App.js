@@ -1,14 +1,20 @@
 import React from 'react';
+import './App.css';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Main from "./Main";
 import { Switch, BrowserRouter, Redirect } from 'react-router-dom';
-import Main from './Main';
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
       <div>
+        <CssBaseline>
         <Main/>
+        </CssBaseline>
       </div>
     </BrowserRouter>
+    </div>
   );
 }
 
