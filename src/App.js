@@ -1,14 +1,14 @@
 import React from 'react';
+import { Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import Main from './Main';
-import './App.css';
 
 function App() {
   return (
-    <BrowseRouter>
+    <BrowserRouter>
       <div>
         <Main/>
       </div>
-    </BrowseRouter>
+    </BrowserRouter>
   );
 }
 
