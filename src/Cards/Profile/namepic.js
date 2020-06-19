@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
-import Avatar from 'react-avatar';
+//import Avatar from 'react-avatar';
+import Avatar from '@material-ui/core/Avatar';
 
 export default class Namepic extends Component{
     constructor(props){
@@ -7,6 +8,7 @@ export default class Namepic extends Component{
         this.state={
             firstname:"",
             lastname:"",
+            location:"",
             description:"",
             profile_pic:""
         }
@@ -15,7 +17,7 @@ export default class Namepic extends Component{
         return(
             <div>    
                 <div className="profilepic"><Avatar/></div>     
-                <button>Edit</button>  
+                <button onClick= {this.editaction}>Edit</button>  
                 {this.state.firstname} {this.state.lasttname} 
                 No location added
                 Description (In your words)
