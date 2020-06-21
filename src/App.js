@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Main from "./Main";
 import { Switch, BrowserRouter, Redirect } from 'react-router-dom';

@@ -1,15 +1,15 @@
 import React, { Component} from 'react' ;
 import {Route} from 'react-router-dom';
 import { Switch, BrowserRouter, Redirect } from 'react-router-dom';
-import Sidebar from './sidebar';
-import Profile from './Cards/Profile/Profile';
-import Dashboard from './Cards/Dashboard';
-import ResumeBuilder from './Cards/ResumeBuilder';
-import Community from './Cards/Community';
-import Resources from './Cards/Resources';
-import FAQ from './Cards/FAQ';
-import Contact from './Cards/Contact';
-import Referral from './Cards/Referral';
+import Sidebar from './components/sidebar';
+import Profile from './components/Profile/Profile';
+import Dashboard from './components/Cards/Dashboard';
+import ResumeBuilder from './components/Cards/ResumeBuilder';
+import Community from './components/Cards/Community';
+import Resources from './components/Cards/Resources';
+import FAQ from './components/Cards/FAQ';
+import Contact from './components/Cards/Contact';
+import Referral from './components/Cards/Referral';
 
 class Main extends Component{
     render(){
